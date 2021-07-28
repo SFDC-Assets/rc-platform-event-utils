@@ -1,0 +1,24 @@
+minimum_cumulusci_version: '3.39.0'
+project:
+    name: sfdc-platform-event-utils
+    package:
+        name: sfdc-platform-event-utils
+        api_version: '50.0'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/sfdc-platform-event-utils/tests
+            options:
+                outputdir: robot/sfdc-platform-event-utils/results
+
+    robot_testdoc:
+        options:
+            path: robot/sfdc-platform-event-utils/tests
+            output: robot/sfdc-platform-event-utils/doc/sfdc-platform-event-utils_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
