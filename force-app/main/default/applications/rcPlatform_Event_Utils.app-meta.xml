@@ -11,6 +11,7 @@
     <label>Platform Event Utils</label>
     <navType>Standard</navType>
     <tabs>rcCDC_Count__c</tabs>
+    <tabs>standard-report</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Platform_Event_Utils_UtilityBar</utilityBar>
 </CustomApplication>

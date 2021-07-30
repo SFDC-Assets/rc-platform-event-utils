@@ -67,4 +67,11 @@ public with sharing class rcCountCache {
         return countMap;
     }
 
+    public static void removeCount(String key) {
+        System.debug('rcCountCache > removeCount - key: ' + key);
+        if (orgCache != null) {
+            orgCache.remove(key);
+        }
+    }
+
 }
