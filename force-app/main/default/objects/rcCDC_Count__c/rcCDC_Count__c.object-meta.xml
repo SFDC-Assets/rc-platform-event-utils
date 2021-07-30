@@ -159,7 +159,11 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>CDC Counts</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Object_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Count__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

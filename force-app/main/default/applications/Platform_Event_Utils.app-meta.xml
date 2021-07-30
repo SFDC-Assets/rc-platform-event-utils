@@ -10,6 +10,7 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <label>Platform Event Utils</label>
     <navType>Standard</navType>
+    <tabs>Platform_Event_Utils_Home</tabs>
     <tabs>rcCDC_Count__c</tabs>
     <tabs>standard-report</tabs>
     <uiType>Lightning</uiType>
