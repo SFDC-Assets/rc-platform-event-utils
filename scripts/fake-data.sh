@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # input
-ORG_ALIAS=qa
+ORG_ALIAS=dev
 RECIPE=scripts/snowfakery/OpportunityContactRole.recipe.yml
 NUM_RECORDS=2
 
