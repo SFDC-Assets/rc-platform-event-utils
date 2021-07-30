@@ -4,6 +4,18 @@
         <application>rcPlatform_Event_Utils</application>
         <visible>true</visible>
     </applicationVisibilities>
+    <classAccesses>
+        <apexClass>rcCountCache</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>rcCountCache_StoreCDCForDate</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>rcTriggerCountHandler</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <fieldPermissions>
         <editable>true</editable>
         <field>rcCDC_Count__c.Count__c</field>
@@ -25,7 +37,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
-    <label>platform event utils</label>
+    <label>platform_event_utils</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -35,6 +47,10 @@
         <object>rcCDC_Count__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <tabSettings>
+        <tab>Platform_Event_Utils_Home</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
     <tabSettings>
         <tab>rcCDC_Count__c</tab>
         <visibility>Visible</visibility>

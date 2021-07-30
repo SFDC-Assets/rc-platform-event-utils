@@ -23,35 +23,24 @@ public class rcTriggerCountHandler {
     // main method that will be called during execution
     public void run() {
 
-        Integer size = Trigger.New.size();
-        rcCountCache.putUpdate(objectName, size);
-
-        /*
-        // dispatch to the correct handler method
+        Integer size = 0;       
+        
         switch on this.context {
-            when BEFORE_INSERT {
-                //this.beforeInsert();
-            }
-            when BEFORE_UPDATE {
-                //this.beforeUpdate();
-            }
-            when BEFORE_DELETE {
-                //this.beforeDelete();
-            }
             when AFTER_INSERT {
-                //this.afterInsert();
+                size = Trigger.New.size(); 
             }
             when AFTER_UPDATE {
-                //this.afterUpdate();
+                size = Trigger.New.size(); 
             }
             when AFTER_DELETE {
-                //this.afterDelete();
+                size = Trigger.Old.size(); 
             }
             when AFTER_UNDELETE {
-                //this.afterUndelete();
+                size = Trigger.New.size(); 
             }
         }
-        */
+        
+        rcCountCache.putUpdate(objectName, size);
 
     } // end run
 
@@ -74,16 +63,7 @@ public class rcTriggerCountHandler {
             this.isTriggerExecuting = true;
         }
     
-        if((Trigger.isExecuting && Trigger.isBefore && Trigger.isInsert) ||
-            (ctx != null && ctx == 'before insert')) {
-          this.context = TriggerContext.BEFORE_INSERT;
-        } else if((Trigger.isExecuting && Trigger.isBefore && Trigger.isUpdate) ||
-            (ctx != null && ctx == 'before update')){
-          this.context = TriggerContext.BEFORE_UPDATE;
-        } else if((Trigger.isExecuting && Trigger.isBefore && Trigger.isDelete) ||
-            (ctx != null && ctx == 'before delete')) {
-          this.context = TriggerContext.BEFORE_DELETE;
-        } else if((Trigger.isExecuting && Trigger.isAfter && Trigger.isInsert) ||
+        if((Trigger.isExecuting && Trigger.isAfter && Trigger.isInsert) ||
             (ctx != null && ctx == 'after insert')) {
           this.context = TriggerContext.AFTER_INSERT;
         } else if((Trigger.isExecuting && Trigger.isAfter && Trigger.isUpdate) ||

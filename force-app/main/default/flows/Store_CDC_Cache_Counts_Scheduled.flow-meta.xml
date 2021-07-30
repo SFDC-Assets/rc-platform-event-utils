@@ -10,23 +10,18 @@
         <inputParameters>
             <name>cacheDateList</name>
             <value>
-                <elementReference>today</elementReference>
+                <elementReference>yesterday</elementReference>
             </value>
         </inputParameters>
     </actionCalls>
-    <apiVersion>52.0</apiVersion>
-    <formulas>
-        <name>today</name>
-        <dataType>Date</dataType>
-        <expression>{!$Flow.CurrentDate}</expression>
-    </formulas>
+    <apiVersion>49.0</apiVersion>
     <formulas>
         <name>yesterday</name>
         <dataType>Date</dataType>
         <expression>{!$Flow.CurrentDate} - 1</expression>
     </formulas>
-    <interviewLabel>Store CDC Cache Counts {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Store CDC Cache Counts</label>
+    <interviewLabel>Store CDC Cache Counts - Scheduled {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Store CDC Cache Counts - Scheduled</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -59,5 +54,5 @@
         </schedule>
         <triggerType>Scheduled</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>
