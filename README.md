@@ -4,6 +4,8 @@ This is a Salesforce DX project that has some (hopefully) useful utilities aroun
 
 - Monitoring the number of updates for individual objects per day to get an idea of the number of CDC events that would be generated if you turned on CDC for those objects. 
 
+For details on using this code, see https://salesforce.quip.com/bK9bAV7N1M4s
+
 ## Development
 
 To work on this project in a scratch org:
