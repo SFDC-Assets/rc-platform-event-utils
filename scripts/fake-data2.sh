@@ -2,8 +2,8 @@
 
 # input
 ORG_ALIAS=dev
-RECIPE=scripts/snowfakery/Opportunities1.recipe.yml
-NUM_RECORDS=2
+RECIPE=scripts/snowfakery/Opportunities2.recipe.yml
+NUM_RECORDS=3
 
 # run snowfakery recipe
 echo "running snowfakery recipe: $RECIPE"

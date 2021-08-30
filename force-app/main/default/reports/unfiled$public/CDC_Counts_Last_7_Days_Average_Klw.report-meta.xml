@@ -5,18 +5,16 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
-            <aggregate>Sum</aggregate>
+            <aggregate>Average</aggregate>
             <axisBinding>y</axisBinding>
             <column>rcCDC_Count__c.Count__c</column>
         </chartSummaries>
-        <chartType>HorizontalBarStacked</chartType>
+        <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>rcCDC_Count__c.Object_Name__c</groupingColumn>
-        <legendPosition>Right</legendPosition>
         <location>CHART_BOTTOM</location>
-        <secondaryGroupingColumn>rcCDC_Count__c.Date__c</secondaryGroupingColumn>
-        <showAxisLabels>true</showAxisLabels>
+        <showAxisLabels>false</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
         <showValues>false</showValues>
@@ -29,19 +27,16 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
+        <aggregateTypes>Average</aggregateTypes>
         <field>rcCDC_Count__c.Count__c</field>
     </columns>
-    <format>Matrix</format>
-    <groupingsAcross>
-        <field>rcCDC_Count__c.Date__c</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsAcross>
+    <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>rcCDC_Count__c.Object_Name__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>CDC Counts - Last 7 Days</name>
+    <name>CDC Counts - Last 7 Days Average</name>
     <params>
         <name>co</name>
         <value>1</value>

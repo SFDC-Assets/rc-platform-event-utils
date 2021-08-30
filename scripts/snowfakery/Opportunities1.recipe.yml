@@ -34,7 +34,7 @@
               random_choice:
                 Prospecting: 50%
                 Qualification: 50%
-            CloseDate: 2022-01-01
+            CloseDate: 2024-01-01
             ContactId:
               reference: Contact
             AccountId:
