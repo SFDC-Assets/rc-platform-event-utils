@@ -34,8 +34,4 @@ flows:
         steps:
             3:
                 task: assign_perm_set
-    config_qa:
-        steps:
-            3:
-                task: assign_perm_set
 

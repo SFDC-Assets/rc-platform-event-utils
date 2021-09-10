@@ -2,6 +2,7 @@
 
 # input
 ORG_ALIAS=dev
+#ORG_ALIAS=rc-assets
 RECIPE=scripts/snowfakery/Opportunities1.recipe.yml
 NUM_RECORDS=2
 
